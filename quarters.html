@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quarterly Projects</h1>
+        <button class="btn" onclick="goToQuarter('1')">q1</button>
+        <button class="btn" onclick="goToQuarter('2')">q2</button>
+        <button class="btn" onclick="goToQuarter('3')">q3</button>
+        <button class="btn" onclick="goToQuarter('4')">q4</button>
+    </div>
+
+    <script>
+        function goToQuarter(quarter) {
+            alert("You selected the " + quarter + " Quarter!");            
+        }
+    </script>
+</body>
+</html>
